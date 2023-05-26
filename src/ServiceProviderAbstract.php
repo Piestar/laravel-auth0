@@ -163,6 +163,7 @@ abstract class ServiceProviderAbstract extends ServiceProvider
      */
     final public function registerGuards(): void
     {
+
         if (true === config('auth0.registerGuards')) {
             if (null === config('auth.guards.auth0-session')) {
                 config([
